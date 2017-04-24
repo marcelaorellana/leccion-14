@@ -1,0 +1,51 @@
+	<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Formulario html</title>
+
+</head>
+
+<body style="background-color:powderblue;">
+
+  <script src="js/scripts.js"></script>
+<div align="center">
+<h2>Ingreso de Datos</h2>
+<form action = "">
+	<p>
+	Contraseña:<br>
+	<input type="password" name = "pw" pattern = ".{6,}" title = "6 o más caracteres" required>
+	</p>
+	<p>
+	Nombre:<br>
+    <input type="text" name="nombre" required>
+    </p>
+    <p>
+    Apellido:<br>
+    <input type="text" name="apellido" required>
+    </p>
+    <p>
+    Email:<br>
+    <input type="email" name="email" required>
+    </p>
+    <p>
+    Teléfono:<br>
+    <input type="text" name="telefono" pattern= "[0-9]{8,}"  title="Ingrese solo numeros, minimo 8" required>
+    </p>
+	<p>
+	Elegir mascota preferida:<br>
+	<select name = "Elegir" id = "Elegir" required>
+	  <option value="" disabled selected>Seleccionar</option>
+	  <option value="Perros">Volvo</option>
+	  <option value="Gatos">Saab</option>
+	  <option value="Conejos">Mercedes</option>
+	  <option value="Hamsters">Audi</option>
+    </select>
+    </p>
+	<input type="submit"><br>
+	</form>
+</div>
+</body>
+</html>
